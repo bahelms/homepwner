@@ -19,6 +19,9 @@
 		0BC1EB5B194CA3AE0074A931 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC1EB43194CA3AE0074A931 /* UIKit.framework */; };
 		0BC1EB63194CA3AE0074A931 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BC1EB61194CA3AE0074A931 /* InfoPlist.strings */; };
 		0BC1EB65194CA3AE0074A931 /* HomepwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1EB64194CA3AE0074A931 /* HomepwnerTests.m */; };
+		0BC1EB70194CA6460074A931 /* BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1EB6F194CA6460074A931 /* BNRItemsViewController.m */; };
+		0BC1EB73194CA8690074A931 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1EB72194CA8690074A931 /* BNRItem.m */; };
+		0BC1EB76194CA92C0074A931 /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1EB75194CA92C0074A931 /* BNRItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		0BC1EB60194CA3AE0074A931 /* HomepwnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomepwnerTests-Info.plist"; sourceTree = "<group>"; };
 		0BC1EB62194CA3AE0074A931 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0BC1EB64194CA3AE0074A931 /* HomepwnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnerTests.m; sourceTree = "<group>"; };
+		0BC1EB6E194CA6460074A931 /* BNRItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRItemsViewController.h; path = ../BNRItemsViewController.h; sourceTree = "<group>"; };
+		0BC1EB6F194CA6460074A931 /* BNRItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItemsViewController.m; path = ../BNRItemsViewController.m; sourceTree = "<group>"; };
+		0BC1EB71194CA8690074A931 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		0BC1EB72194CA8690074A931 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		0BC1EB74194CA92C0074A931 /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRItemStore.h; path = ../BNRItemStore.h; sourceTree = "<group>"; };
+		0BC1EB75194CA92C0074A931 /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItemStore.m; path = ../BNRItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,9 @@
 			children = (
 				0BC1EB4E194CA3AE0074A931 /* BNRAppDelegate.h */,
 				0BC1EB4F194CA3AE0074A931 /* BNRAppDelegate.m */,
+				0BC1EB6E194CA6460074A931 /* BNRItemsViewController.h */,
+				0BC1EB6F194CA6460074A931 /* BNRItemsViewController.m */,
+				0BC1EB77194CA94D0074A931 /* Model */,
 				0BC1EB51194CA3AE0074A931 /* Images.xcassets */,
 				0BC1EB46194CA3AE0074A931 /* Supporting Files */,
 			);
@@ -142,6 +154,17 @@
 				0BC1EB61194CA3AE0074A931 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BC1EB77194CA94D0074A931 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BC1EB74194CA92C0074A931 /* BNRItemStore.h */,
+				0BC1EB75194CA92C0074A931 /* BNRItemStore.m */,
+				0BC1EB71194CA8690074A931 /* BNRItem.h */,
+				0BC1EB72194CA8690074A931 /* BNRItem.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC1EB76194CA92C0074A931 /* BNRItemStore.m in Sources */,
+				0BC1EB70194CA6460074A931 /* BNRItemsViewController.m in Sources */,
+				0BC1EB73194CA8690074A931 /* BNRItem.m in Sources */,
 				0BC1EB4C194CA3AE0074A931 /* main.m in Sources */,
 				0BC1EB50194CA3AE0074A931 /* BNRAppDelegate.m in Sources */,
 			);
